@@ -6,9 +6,15 @@ import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import ResponsiveEmbed from 'react-bootstrap/ResponsiveEmbed'
 
+var videoUrl="https://www.youtube.com/embed/vlDzYIIOYmM";
+
+function AulaItemListComponent(props){
+
+  return props.name;
+}
+
 function setVideoLink(){
-
-
+  return alert("sdvs");
 }
 
 function VideoBoxComponent(props){
@@ -48,8 +54,8 @@ function App() {
               <ListGroup.Item action href="#link3" disabled>
                   Aula 3
               </ListGroup.Item>
-              <ListGroup.Item action href="#link4" >
-                  Aula 4
+              <ListGroup.Item action href="#link4" onClick={setVideoLink()}>
+                  <AulaItemListComponent url="link.com" name="Auuula 4" />
               </ListGroup.Item>
               <ListGroup.Item action href="#link5" >
                   Aula 5
