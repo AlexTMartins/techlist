@@ -4,6 +4,9 @@ import ListGroup from 'react-bootstrap/ListGroup'
 import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
+import ResponsiveEmbed from 'react-bootstrap/ResponsiveEmbed'
+
+
 
 function App() {
   return (
@@ -31,7 +34,7 @@ function App() {
               <ListGroup.Item action href="#link2" disabled>
                   Aula 2
               </ListGroup.Item>
-              <ListGroup.Item action href="#link3" disabled >
+              <ListGroup.Item action href="#link3" disabled>
                   Aula 3
               </ListGroup.Item>
               <ListGroup.Item action href="#link4" >
@@ -49,11 +52,11 @@ function App() {
                   
             </Col>
             <Col xs={12} md={8}>
-
-            
-            <p>Video da aula</p>
-
-
+              <div style={{ width: 660, height: 'auto' }}>
+                <ResponsiveEmbed aspectRatio="16by9">
+                  <embed type="" src="https://www.youtube.com/embed/vlDzYIIOYmM" />
+                </ResponsiveEmbed>
+              </div>
             </Col>
           </Row>        
       </Container>
